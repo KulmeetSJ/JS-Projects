@@ -1,0 +1,110 @@
+body {
+    background: #06283d;
+    color: saddlebrown;
+    font-family: serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#container {
+    margin: 5% auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box {
+    display: inline-block;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+span {
+    position: absolute;
+    font-size: 75px;
+    font-family: sans-serif;
+    text-align: center;
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    margin: 5px;
+    font-weight: 300;
+    margin-left: -35px;
+}
+
+
+.top {
+    border-top: none;
+}
+
+.bottom {
+    border-bottom: none;
+}
+
+.left {
+    border-left: none;
+}
+
+.right {
+    border-right: none;
+}
+
+.alert {
+    height: 74px;
+    width: 125px;
+    font-weight: 800;
+    font-size: larger;
+    line-height: larger;
+    display: inline-block;
+    background: #06283d;
+    position: relative;
+    z-index: 10;
+    margin-top: -50%;
+    border-radius: 20px;
+    box-shadow: 0 0 75px 2px dimgray;
+    animation: larger 0.5s;
+    animation-fill-mode: forwards;
+    box-sizing: content-box;
+    padding: 30px;
+    bottom: 50px;
+    top: 0;
+}
+
+button {
+    border-radius: 2px;
+    background: #06283d;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0f5e70;
+}
+
+button:focus {
+    background: crimson;
+}
+
+.activeBox {
+    background: #0f5e70;
+}
+
+@keyframes larger {
+    from {
+        height: 75px;
+        width: 125px;
+    }
+
+    to {
+        height: 100px;
+        width: 250px;
+    }
+}
